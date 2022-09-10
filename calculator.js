@@ -4,3 +4,11 @@ const calculator = {
     waitingForSecondOperand: false,
     operator: null,
   };
+  function updateDisplay() {
+    // select the element with class of `calculator-screen`
+    const display = document.querySelector('.display-numbers');
+    // update the value of the element with the contents of `displayValue`
+    display.value = calculator.displayValue;
+  }
+  
+  updateDisplay();
